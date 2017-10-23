@@ -1,0 +1,33 @@
+{
+  "name": "nanokit-statusbar",
+  "version": "1.0.0",
+  "description": "Consistent StatusBar component for React Native",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/nanokit-statusbar",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/nanokit-statusbar",
+  "bugs": "https://github.com/tiaanduplessis/nanokit-statusbar",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "test.js"
+  ],
+  "scripts": {
+    "test": "npm run format",
+    "format": "prettier-standard index.js"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "prettier-standard": "^7.0.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
+}
