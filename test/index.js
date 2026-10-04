@@ -259,4 +259,5 @@ function run () {
     })
   }
   console.log(passed + ' checks passed (' + process.env.NODE_ENV + ', React ' + React.version + ', prop-types ' + version + ')')
+  require('./jsx')()
 }

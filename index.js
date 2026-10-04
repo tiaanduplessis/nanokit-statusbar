@@ -2,7 +2,15 @@ import React from 'react'
 import { View, StatusBar as RNStatusBar, StyleSheet } from 'react-native'
 import PropTypes from 'prop-types'
 
-const StatusBar = ({ dark, backgroundColor, style, ...otherProps }) => {
+const StatusBar = props => {
+  const resolvedProps = { ...props }
+  const defaults = StatusBar.defaultProps
+  if (defaults) {
+    for (const key in defaults) {
+      if (resolvedProps[key] === undefined) resolvedProps[key] = defaults[key]
+    }
+  }
+  const { dark, backgroundColor, style, ...otherProps } = resolvedProps
   const barStyle = dark ? 'dark-content' : 'light-content'
 
   return (
